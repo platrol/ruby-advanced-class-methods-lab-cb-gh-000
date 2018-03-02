@@ -14,6 +14,10 @@ class Song
      self.new
   end
 
+  def self.create_by_name(name)
+    self.create
+    @@all << name
+
   def initialize
     @@all << self
   end
